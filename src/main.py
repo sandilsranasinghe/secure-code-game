@@ -5,6 +5,7 @@ Item = namedtuple("Item", "type, description, amount, quantity")
 
 
 def validorder(order: Order):
+    """Check if the order is valid."""
     net = 0
 
     for item in order.items:
