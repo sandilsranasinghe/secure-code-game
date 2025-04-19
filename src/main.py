@@ -7,6 +7,8 @@ Item = namedtuple("Item", "type, description, amount, quantity")
 def validorder(order: Order):
     net = 0
 
+    print("Test PR")
+
     for item in order.items:
         if item.type == "payment":
             net += item.amount
